@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+      
       - name: Run a one-line script
         run: echo Hello from WS1
 
@@ -18,5 +18,11 @@ jobs:
       - run: echo ${{ github.event.client_payload }}
       - run: echo ${{ github.event.client_payload.ws1_test_string }}
       - run: echo ${{ github.event.client_payload.ws1_test_array }}
+      
+      - run: |
+          sleep 25
+          echo "For testing failure"
+          exit 1
+
 
 
