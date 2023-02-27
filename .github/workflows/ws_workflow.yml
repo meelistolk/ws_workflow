@@ -20,7 +20,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello again from WS1
         
-      - run: echo ${{ fromJSON(inpusts.test_data) }}
+      - run: echo ${{ fromJSON(inputs.test_data) }}
       
       - run: |
           sleep 25
