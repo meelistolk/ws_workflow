@@ -1,6 +1,11 @@
 name: WS1 workflow
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs: 
+      test_data:
+        required: true
+        type: string
 
 jobs:
   build:
