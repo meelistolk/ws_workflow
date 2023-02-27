@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs: 
       test_data:
-        required: true
+        required: false
         type: string
 
 jobs:
