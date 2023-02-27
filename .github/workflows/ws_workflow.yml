@@ -18,10 +18,8 @@ jobs:
         run: echo Hello from WS1
 
       - name: Run a one-line script
-        run: echo ${{ inputs.test_data }}
-        
-      - run: echo ${{ fromJSON(inputs.test_data) }}
-      
+        run: echo "test data is ${{ inputs.test_data }}"
+              
       - run: |
           sleep 25
           echo "For testing failure"
