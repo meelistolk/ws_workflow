@@ -1,6 +1,12 @@
 name: This is an example
 
-on: [pull_request]
+on: 
+  pull_request:
+  workflow_dispatch:
+    inputs: 
+      test_data:
+        required: false
+        type: string
 
 jobs:
   one:
